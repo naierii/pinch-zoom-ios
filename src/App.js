@@ -1,11 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <TransformWrapper>
+          <TransformComponent>
+            <img src={logo} className="App-logo" alt="logo" />
+          </TransformComponent>
+        </TransformWrapper>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
