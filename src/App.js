@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TransformWrapper>
+        <TransformWrapper
+          pinch={{ disabled: false }}
+        >
           <TransformComponent>
             <img src={logo} className="App-logo" alt="logo" />
           </TransformComponent>
